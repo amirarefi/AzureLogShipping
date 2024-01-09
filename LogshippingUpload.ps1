@@ -5,8 +5,8 @@ $uri = [System.Uri] $SASUri
 $sasToken = $uri.Query
 
 #declare variables and storage account details
-$folderPath = 'Your first absolute folder path'
-$folderPath2 = 'Your second absolute folder path'
+$folderPath = 'Your first absolute folder path to your IIS logs'
+$folderPath2 = 'Your second absolute folder path to your copy folder'
 $logfileExtension = '*.log' #you can change this extension based on your needs
 $storageAccountName = $uri.DnsSafeHost.Split(".")[0]
 $container = $uri.LocalPath.Substring(1)
